@@ -1,0 +1,83 @@
+escopo lexico
+as funções podem acessar as funções dos seus vizinhos por exemplo ele busca 
+
+function falaoi () {
+    const nome =  "otavio";
+    function descendo() {
+        function descendo_mais() {
+            console.log(nome);
+        }
+    }
+}
+
+isso aqui embaixo não funcionaria por exemplo
+function falaoi () {
+    console.log(nome);
+    function descendo() {
+        function descendo_mais() {
+            const nome =  "otavio";
+        }
+    }
+}
+
+ou seja ela vai procurar a variável nos seus vizinhos ate chegar nas funçoes globais se não tiver nas variaveis globais então ele n existe
+
+closure
+function retornafunction () {
+    const nome = 'luiz';
+    return function() {
+        return nome;
+    }
+}
+
+funções de callback
+resumindo funcões que fazem algo ou n mas que chamam outras funções
+
+function caiu (bolean caiu) {
+    return caiu;
+}
+
+function Neymar () {
+    caiu(true);
+}
+
+ou
+function caiu (bolean caiu) {
+    return caiu;
+}
+
+function Neymar (callback) {
+}
+
+function callback {
+    caiu(true);
+}
+
+resumindo a função neymar tem uma função de callback que é a caiu
+
+funções imediatas IIFE
+usadas para evitar que nossas funções toquem o escopo global
+
+(function(){
+    todo seu codigo da sua aplicação vai ficar aqui
+})();
+
+funções de fabrica fabrica functions (cria objetos literais)
+
+factore function ela cria objetos 
+
+function criapessoa() {
+    return {
+        nome: luis,
+        sobrenome: cesinha,
+        fala(assunto) {
+            return `${assunto} falado por ${this.nome} ${this.sobrenome}`
+        }
+    }
+}
+getter ele transforma um metodo em um atributo
+get
+setter
+set 
+
+this -> vai se referir a um objeto que ele está se referindo

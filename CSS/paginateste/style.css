@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+#container-prc {
+    background-color: white;
+    margin: 80px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#titulo {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#logo-gato {
+    width: 100px;
+    background-color: white;
+}
+
+.op-menu {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}

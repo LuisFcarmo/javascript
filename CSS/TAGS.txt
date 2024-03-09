@@ -1,0 +1,101 @@
+//seletores e classes
+backgrond-image: coloca uma imagem no fundo
+    propriedades
+
+background-size:
+    contain
+    no-repeat
+
+border (tipos de borda)
+    solid - borda solida
+    dotted - pontilhada
+    dashed - com trascinho
+    double - duas bordas
+    groove - efeiot 3d
+    ridge
+    inset
+    outset 
+    none 
+    hiden
+
+margin:
+    da espaço em branco entre os elementos
+
+padding:
+    faz um afastamento dentro do elemento e não por fora do elemento
+
+text decoration:
+
+text-transform:
+    uppercase: letras maiusculas
+    capitalize: primeira palavra em maiusculo
+    lowercase: sempre minusculo
+    text-indent:
+    Letter-spacing: da espaço entre as letras
+    line-heidth: altura da linha
+    line-width: lagura da linha
+    word-spacing: espaçamento entre as palavras
+
+fonts:
+links:
+
+propriedade muito importante do css display flex
+display
+    block: começa no começo da linha e ocupa todo espaço na tela
+        elementos com display block
+        divs
+        h1....h6
+        p
+        form
+        header 
+        footer
+        section
+    inline: dispôes o elemento em linha
+        a: 
+        img
+    none: 
+    isso esconde o elemento
+
+    inline-block: 
+    inline basicamente são interpretados como palavra porem os elementos inline-block
+    tem os elementos meio bloco meio inline
+
+max-widht | max-heigth como funciona na pratica
+eles delimitam tanto a altura quando lagura maxima de um certo componente na tela
+
+propriedade position
+
+static: ele fica parado em uma posição fixa na tela
+
+relative: (deixa o posição do elemento relativa posibilianto o elemento ser reposiçionado na tela)
+    left: 30px
+    rigth: 30px
+    z-index: ; delimita se o elemento vai aparacer atras ou n frente no elemento que ele está na frente
+
+fixed:
+    fixa um elemento em uma posição da tela e independente de como vc modificar a pagina ela vai ficar lá
+
+absolute:
+    ele diz como vai ser o posionamento do elemento em relação aos pais desse lemento porem o posicionamento 
+    do seu ancestal precisa ser qualquer difenrente de statico 
+
+stick: tipo pegajoso
+    dificil de explicar se vc esquecer pesquisa ksakdska
+
+propriedade overflow:
+
+
+
+
+Flex (como funciona):
+    flex direction
+        column um embaixo do outro
+        row um do lado do outro
+    flex wrap:
+        ele não vai reajustar a quantidade de itens disponiveis na tela
+    flex flow:
+        junção do flex direction e flex wrap
+    align-iten:
+        center
+    justify-content:
+        center

@@ -1,0 +1,157 @@
+
+Principais tags de texto
+
+    <h1>..... <h6> cabeçalhos da pagina HTML
+
+    <bold> simplismente negrito
+
+    <strong> deixa o texto forte basicamente
+
+    <hr> divisões basicamente separa as coias com linha
+
+    <br> break row quebras linhas
+
+    <i> deixa em italico
+
+    <u> deixa sublinhado
+
+    <small> deixa as coisas pequenas
+
+    <del> essa tag risca a palavra ou seja deleta s coisas
+
+    <sup> usado para fazer a exponencial
+
+    <sub> deixa embaixo
+
+    <mark> marca os textos
+
+elementos de sitação
+
+    <abbr title = "hyper text markup languagem" > abreviações deixa por exemplo HTLM(aqui ficaria o titulo que eu digitei qunado alguém passase o mause)
+
+    <adress> tag para colocar endereços
+
+    <cite> tag usada para colocar nome de filmes obras etc etc
+
+    <q> citações curtas de coisas que alguém falou exemplo "falano falou isso"
+
+    <blockquote> citações do texto mas, basicamente isso aqui é do proprio texto que vc está fazendo
+
+    <bdo> coloca na direção que vc especificar
+        dir = 'ltr' left to right
+        dir = 'rtl' right to left
+
+comentarios
+    <!----> mesma coisa que comentarios em codigo mas, basicemnte no HTML
+
+links ou hiper links
+
+links absolutos 
+    <a href = "link para onde vc quer ir">
+    
+    atributos target
+    <a target = "atributos">
+        Blank abre o site em outros páginas
+
+caminhos relativos (caminhos dentro do seu proprio projeto)
+
+    <a href = "aqui colamos o caminho para seu outra pagina htlm">
+    // exatamente igual com os caminhos do c
+
+imagens (resumão)
+    
+    <img src = "caminho para imagem">
+        atributos 
+        whidth height mesmo atributos das outras interfaces
+        alt
+        Uma descrição da imagem para pessoas com deficiência visuaveis e também para ajudar no algoritmos de busca
+
+tabelas
+    estrutura basica da tabelas
+    
+    <table>
+        <tr>
+            <th> </th>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    th titulo
+    td conteudos das colunas
+
+    atributos
+    whidth
+    border faz uma corda
+
+listas
+
+listas não ordernadas
+    
+    esqueleto
+
+    <ul>
+        <li>
+        <li>
+    <ul>
+
+listas ordernadas
+
+    esquelo basico
+
+    <ol>
+        <li>
+        <li>
+    <ol>
+
+iframes
+    rodar videos no youtube
+    <iframe src = "links">
+        atributos disponiveis no iframe
+        whidth
+        height
+    
+    rodando paginas minhas no meu iframe
+
+    <a href = "link" target =  "meu-iframe">
+    <iframe name = "meu-iframe">
+
+formularios
+
+    <input>
+        tipos
+            password, email, text, radio, check-box
+        atributos 
+            placeholder
+            required (faz alguns testes para garantir que a pessoa está enviando certo)
+        
+audio
+    <audio constrols constrolslist = "nodownload">
+        <source src = "caminho de arquivo" type = "audio/mpeg">
+    </audio>
+        controls mostrar um pequeno controlador na pagina
+        type mp3 = "audio/mpeg"
+
+videos 
+    <video>
+        <source src = 'video/video-teste.mp4' type = 'video/mp4'>
+    </video>
+    atributos
+        whidth 
+        height
+        controls
+        poster = "caminho de uma imagem" para colocar como thumbmail do video
+        autoplay
+        constrols = "nodowload", "disablepicutreinpicutre"
+
+HTML SEMANTICO
+
+<header> <header\n> tag usada para cabeçalhos
+
+<nav> <nav\n> tag para fazer menos nav bars
+
+<section> <section\n> tags para determinar seções dos sites
+<section> <section\n> tags para determinar seções dos sites
+
+<footer> <footer\n> rodapé da pagina

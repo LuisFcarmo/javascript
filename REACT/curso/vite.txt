@@ -1,0 +1,12 @@
+npm create vite@latest
+escolhe
+npm i
+npm run dev
+
+importanto component import x from 'caminho'
+
+Hierarquia de componentes no react
+
+renderização
+
+hooks oque é ?

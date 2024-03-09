@@ -1,0 +1,70 @@
+// defineproperty
+// defineproperties
+
+function produto (nome, preco, estoque) {
+    private this.nome = nome;
+    private this.preco = preco;
+    private this.estoque = estoque;
+    
+    objeto.defineProperty(this, 'estoque', {
+        enumerable: true, // pode ser exibido ou mostra a chave
+        value: estoque, // valor da chave
+        writable: true, //define se pode ou não ser alterado
+        configurable: false //poder ou não configurar essa chave 
+    });
+
+    //isso não vai funcionar pois a variavel não pode ser alterada
+    não pode ser apagada etc.....
+    objeto.defineProperty(this, 'estoque', {
+        enumerable: true, // pode ser exibido ou mostra a chave
+        value: estoque, // valor da chave
+        writable: true, //define se pode ou não ser alterado
+        configurable: false //poder ou não configurar essa chave 
+    });
+
+    object.defineproperties (this, {
+        nome: {
+            enumerable: true, // pode ser exibido ou mostra a chave
+            value: estoque, // valor da chave
+            writable: true, //define se pode ou não ser alterado
+            configurable: false //poder ou não configurar essa chave 
+        },
+        preco: {
+            enumerable: true, // pode ser exibido ou mostra a chave
+            value: estoque, // valor da chave
+            writable: true, //define se pode ou não ser alterado
+            configurable: false //poder ou não configurar essa chave 
+        },
+    })
+}
+
+
+console.log(Object.keys(p1));
+
+for (let chave in p1) {
+    console.log(chave);
+}
+
+getter e setter 
+
+unction produto (nome, preco, estoque) {
+    private this.nome = nome;
+    private this.preco = preco;
+    private this.estoque = estoque;
+    
+    objeto.defineProperty(this, 'estoque', {
+        enumerable: true, // pode ser exibido ou mostra a chave
+        configurable: false //poder ou não configurar essa chave 
+        get: function () {
+            return estoque;
+        }
+        set: e => (){
+            if (estoque > 0) {
+                this.estoque = estoque;
+            } else {
+                return 'error';
+            }
+        }
+    });
+
+}
