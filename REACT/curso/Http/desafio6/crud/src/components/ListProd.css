@@ -1,0 +1,28 @@
+.BOXLIST {
+    background-color: #3A7BD5;
+    border: 2px solid #CCCCCC;
+    box-shadow: 0 4px 6px rgba(10, 89, 201, 0.22); /* Sombra azul */
+    margin: 20px;
+    padding: 30px;
+    height: 35%;
+    width: 35%;
+    border-radius: 20px;
+}
+
+li {
+    list-style-type: none;
+    word-spacing: 10px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.tituloList {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+span {
+    color: white;
+}

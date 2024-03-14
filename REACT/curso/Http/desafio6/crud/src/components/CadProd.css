@@ -1,0 +1,77 @@
+.BOXCAD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #3A7BD5;
+    border: 2px solid #CCCCCC;
+    width: 35%;
+    height: 35%;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(10, 89, 201, 0.22); /* Sombra azul */
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label {
+    color: #FFFFFF;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.enviar {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste o padding conforme necessário para alcançar a altura e largura desejadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: #FFFFFF; /* Cor do texto */
+    background-color: #074090; /* Cor de fundo */
+    border: none; /* Remover borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.enviar:hover {
+    background-color: #1E446E; /* Mudança de cor de fundo ao passar o mouse */
+}
+
+
+.dados {
+    color: black;
+    background-color: white;
+    appearance: none; /* Remover estilos padrão do navegador */
+    -moz-appearance: none; /* Para navegadores Firefox */
+    -webkit-appearance: none; /* Para navegadores Webkit (Safari, Chrome, etc.) */
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    border: 1.5px solid #ccc; /* Adicionar uma borda padrão */
+    text-decoration: none;
+    cursor: pointer; /* Cursor do mouse */
+}
+
+.dados:focus {
+    outline: none;
+    border-color: #001022;
+}
+
+.dados:hover{
+    transition: 1.2s;
+    background-color: rgb(211, 211, 211);
+}
