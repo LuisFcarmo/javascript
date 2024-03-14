@@ -1,0 +1,123 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Camiseta básica",
+        "price": 19.99
+      },
+      
+      {
+        "id": 2,
+        "name": "Calça jeans",
+        "price": 39.99
+      },
+
+      {
+        "id": 3,
+        "name": "Tênis esportivo",
+        "price": 59.99
+      },
+
+      {
+        "id": 4,
+        "name": "Jaqueta de couro",
+        "price": 79.99
+      },
+
+      {
+        "id": 5,
+        "name": "Camisa social",
+        "price": 29.99
+      },
+
+      {
+        "id": 6,
+        "name": "Sapato de trabalho",
+        "price": 49.99
+      },
+
+      {
+        "id": 7,
+        "name": "Saia midi",
+        "price": 24.99
+      },
+
+      {
+        "id": 8,
+        "name": "Blazer",
+        "price": 69.99
+      },
+
+      {
+        "id": 9,
+        "name": "Bermuda esportiva",
+        "price": 19.99
+      },
+
+      {
+        "id": 10,
+        "name": "Vestido de verão",
+        "price": 34.99
+      },
+
+      {
+        "id": 11,
+        "name": "Blusa de lã",
+        "price": 49.99
+      },
+
+      {
+        "id": 12,
+        "name": "Calça de moletom",
+        "price": 29.99
+      },
+
+      {
+        "id": 13,
+        "name": "Casaco de inverno",
+        "price": 89.99
+      },
+
+      {
+        "id": 14,
+        "name": "Sapato social",
+        "price": 59.99
+      },
+
+      {
+        "id": 15,
+        "name": "Bolsa de couro",
+        "price": 39.99
+      },
+
+      {
+        "id": 16,
+        "name": "Óculos de sol",
+        "price": 19.99
+      },
+
+      {
+        "id": 17,
+        "name": "Relógio de pulso",
+        "price": 99.99
+      },
+
+      {
+        "id": 18,
+        "name": "Boné esportivo",
+        "price": 14.99
+      },
+
+      {
+        "id": 19,
+        "name": "Mochila escolar",
+        "price": 24.99
+      },
+
+      {
+        "id": 20,
+        "name": "Chinelo de dedo",
+        "price": 9.99
+      }
+    ]
+  }

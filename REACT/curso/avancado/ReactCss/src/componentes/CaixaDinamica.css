@@ -1,0 +1,13 @@
+.Red-title {
+    background-color: brown;
+    color: crimson;
+    padding: 15px;
+    border: 5px solid yellow;
+}
+
+.Title {
+    background-color: red;
+    color: crimson;
+    padding: 15px;
+    border: 5px solid blue;
+}
