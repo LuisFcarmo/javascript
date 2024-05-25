@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: wheat;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.la {
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.la:hover {
+    color: brown;
+    transition: 1.5s;
+}

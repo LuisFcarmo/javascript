@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    height: 500px;
+    width: 400px;
+    margin: 40px;
+    background-color: wheat;
+}
+
+button {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 20px;
+    font-size: 30px;
+}
+
+input {
+    margin: 20px;
+    border: 1px solid black;
+    width: 150px;
+    height: 35px;
+}
+
+#cursos {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    max-height: 500px; /* Define a altura máxima */
+    width: 400px;
+    background-color: wheat;
+    overflow: auto; /* Adicionado overflow:auto para permitir a rolagem quando necessário */
+    overflow-y: auto;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#adicionar {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#adicionar:hover {
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
+
+#ulcursos {
+    list-style-type: none;    
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.aop {
+    width: 20px;
+    height: 20px;
+}
+.laop {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+li {
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    width: 250px;
+    height: 50px;
+}
+
+.selecionado { 
+    transition: 0.5s;
+
+    background-color: yellow !important;
+    color: black !important;
+    border: 4px solid gray !important;
+    border-radius: 20px;
+}

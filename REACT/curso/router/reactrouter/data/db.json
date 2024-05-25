@@ -1,0 +1,30 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name":"mouse",
+            "price": "12",
+            "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus maxime asperiores alias distinctio non rem dolorum est, possimus sunt eius assumenda deleniti sint reiciendis sapiente veniam explicabo qui recusandae."
+        },
+        {
+            "id": 2,
+            "name":"cadeira",
+            "price": "22",
+            "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus maxime asperiores alias distinctio non rem dolorum est, possimus sunt eius assumenda deleniti sint reiciendis sapiente veniam explicabo qui recusandae."
+
+        },
+        {
+            "id": 3,
+            "name":"peixe",
+            "price": "32",
+            "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus maxime asperiores alias distinctio non rem dolorum est, possimus sunt eius assumenda deleniti sint reiciendis sapiente veniam explicabo qui recusandae."
+        },
+        {
+            "id": 4,
+            "name":"escova",
+            "price": "42",
+            "desc": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus maxime asperiores alias distinctio non rem dolorum est, possimus sunt eius assumenda deleniti sint reiciendis sapiente veniam explicabo qui recusandae."
+
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pratica2.js"></script>
+    <link rel="stylesheet" href="pratica2.css">
+</head>
+<body>
+    <div>
+        <form id = "formcad">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id = "cnome">
+            <label for="portas">Portas:</label>
+            <input type="number" name = "portas" id = "cportas">
+            <label for="blindagem"></label>
+            <input type="number" name = "blindagem" id = "cblin" disabled>
+            <label for="munic"></label>
+            <input type="number" name="munic" id = "mn" disabled>
+            <input type="radio" id="carmilitar" name="carro" value="militar">
+            <label for="carmilitar">militar</label><br>
+            <input type="radio" id="carronormal" name="carro" value="normal" checked>
+            <label for="carronormal">normal</label><br>
+            <input type="submit" value="cadastrar" id = "btsubmeter">
+        </form>
+    </div>
+    <div id="campo">
+        <div class="caixa">
+            ... os dados do form
+        </div>
+    </div>
+</body>
+</html>

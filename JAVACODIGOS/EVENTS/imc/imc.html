@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "./imc.js"></script>
+    <link rel="stylesheet" href="imc.css">
+    <title>Calculadora IMC</title>
+    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <div id = "container">
+        <form id = "formimc">
+            <label for="nome" class="labelf">email:</label>
+            <input class =  "inputl" id = "nome" type="text" placeholder = "digite seu nome" required>
+
+            <label for="peso" class="labelf">peso:</label>
+            <input  class =  "inputl" id = "peso" type ="text" placeholder = "digite seu peso" required>
+
+            <label for="altura" class="labelf">altura:</label>
+            <input class =  "inputl" id = "altura" type="text" placeholder = "digite sua altura" required>
+            
+            <input id = "bt_submeter" type = "submit" value = "enviar">
+        </form>
+        <p id = "resultado"></p>
+    </div>
+</body>
+</html>

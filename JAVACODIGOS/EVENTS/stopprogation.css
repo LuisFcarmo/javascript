@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#box1 {
+    border: 4px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#box2 {
+    border: 4px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.curso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid gray;
+    height: 60px;
+    width: 190px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.bt {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(65, 64, 64);
+    border: 1px solid black;
+}
+
+.bt:hover {
+    transition: 1s;
+    cursor: pointer;
+    width: 84px;
+    height: 44px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.selecionado { 
+    transition: 0.5s;
+
+    background-color: yellow !important;
+    color: black !important;
+    border: 4px solid gray !important;
+    border-radius: 20px;
+}
+
+.apagar {
+    margin: 20px;
+    padding: 8px;
+}
+
+.apagar:hover {
+    background-color: red;
+    transition: 0.8s;
+    border-radius: 10px;
+}

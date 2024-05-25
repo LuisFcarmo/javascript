@@ -1,0 +1,17 @@
+JSON.parse() é uma função em JavaScript que converte uma string JSON em um objeto JavaScript.
+const jsonString = '{"nome": "João", "idade": 30}';
+const pessoaObjeto = JSON.parse(jsonString);
+JSON.stringify(pessoas)
+JSON.stringify() é uma função em JavaScript que converte um objeto JavaScript em uma string JSON.
+
+Quando você tem um objeto JavaScript e deseja enviá-lo para uma fonte externa ou armazená-lo em algum lugar (como em um banco de dados ou no localStorage), é comum convertê-lo em uma string JSON para esse propósito. JSON.stringify() faz exatamente isso.
+
+Por exemplo, suponha que você tenha um objeto pessoa em JavaScript:
+
+exemplo
+const pessoa = {
+    nome: "João",
+    idade: 30,
+    cidade: "São Paulo"
+};
+const pessoaString = JSON.stringify(pessoa);

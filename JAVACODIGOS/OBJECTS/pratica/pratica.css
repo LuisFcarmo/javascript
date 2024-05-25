@@ -1,0 +1,56 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+#fun {
+    display: flex;
+    
+}
+#campo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+    background-color: wheat;
+    border: solid 2px black;
+    min-height: 100px;
+    max-width: 100px;
+    max-width: 400px;
+    max-height: 400px;
+    overflow-y: auto; /* Adiciona rolagem vertical */
+}
+
+.forms {
+    background-color: antiquewhite;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box; /* Inclui o padding dentro da largura e altura definidas */
+    border: 2px solid black;
+
+}
+
+.forms > * {
+    margin: 5px 0; /* Adiciona espaçamento entre os elementos filhos */
+    align-self: flex-start; /* Centraliza os elementos dentro do contêiner */
+}
+
+.caixa {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+}
+#caixa2 {
+    display: flex;
+}
