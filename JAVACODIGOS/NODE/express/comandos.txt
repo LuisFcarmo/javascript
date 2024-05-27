@@ -1,0 +1,13 @@
+npm install nodemon --save-dev
+npx nodemon nome_arquivo.js
+
+//biblioteca pra view e redenrizar coisas
+npm i ejs
+
+//comandos para mexer com mongodb
+ npm install mongoose
+ npm install dotenv
+
+ npm i express-session connect-mongo connect-flash
+ npm i helmet
+ npm i csurf

@@ -1,0 +1,18 @@
+--save-dev devdependencies
+--save-prod dependencies
+npm install packege_name@version
+version 
+2.       1.       0 
+major   minor    patch
+
+patch correção de bugs
+minor ainda tem compatibilidade com funcionalidades de funções anteriores
+major atualizações que param de ter comptibilidade com versões anteriores
+
+~vai versão na versão patch
+^vai mexer na minor e na patch
+
+npm packegename --depth=?
+isso deixa a profundidade que que o npm ls vai abrir
+
+npm outdated
