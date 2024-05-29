@@ -1,47 +1,43 @@
 <%- include('includes/head') %>
-<%- include('includes/nav') %>
 <div class="container">
     <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8 my-3">
-            <h1 class="text-center">Criar conta ou entrar</h1>
-            <p class="text-center lead">faça login ou crie sua conta abaixa</p>
-            <div class="row">
-                <%- include('includes/message') %>
-
-                <div class="col-lg">
-                    <h4>faça seu cadastro</h4>    
-                    <form action = "/login/register" method = "post">
-                        <input type="hidden" name="_csrf" value = <%= csrfToken%>>
-                        <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" aria-describedby="emailHelp"  name="email">
-                        </div>
-                        <div class="mb-3">
-                        <label for="password" class="form-label" >Password</label>
-                        <input type="password" class="form-control" name="password">
-                        </div>
-                        <button type="submit" class="btn btn-primary">register</button>
-                    </form>
+        <div class="col-lg-6">
+            <h4>faça seu cadastro</h4>    
+            <form action="/login/register" method="post" class="loginForm">
+                <input type="hidden" name="_csrf" value="<%= csrfToken%>">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" aria-describedby="emailHelp"  name="email">
                 </div>
-                <div class="col-lg">
-                    <h4>fazer login</h4>
-                    <form action = "/login/login" method = "post">
-                        <div class="mb-3">
-                        <input type="hidden" name="_csrf" value = <%= csrfToken%>>
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control"  aria-describedby="emailHelp" name = "email">
-                        </div>
-                        <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control"  name ="password"> 
-                        </div>
-                        <button type="submit" class="btn btn-primary">login</button>
-                    </form>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password">
                 </div>
-            </div>
+                <div id="btnsalvarvoltar">
+                    <button type="submit" class="btnsalvar btn-primary" id="btsalvarid">register</button>
+                    <a href="/" class="btnsalvar btn-primary" id="bvoltar">voltar</a>
+                </div>
+            </form>
         </div>
-        <div class="col-lg-8"></div>
+        <div class="col-lg-6" id="logindiv">
+            <h4>fazer login</h4>
+            <form action="/login/login" method="post" class="loginForm">
+                <div class="mb-3">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken%>">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control"  aria-describedby="emailHelp" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control"  name="password"> 
+                </div>
+                <div id="btnsalvarvoltar">
+                    <button type="submit"  class="btnsalvar btn-primary" id="btsalvarid">login</button>
+                    <a href="/" class="btnsalvar btn-primary" id="bvoltar">voltar</a>
+                </div>
+            </form>
+        </div>
+        <link rel="stylesheet" href="/assets/css/login.css">
     </div>
 </div>
 <%- include('includes/rodape') %>

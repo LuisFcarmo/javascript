@@ -59,6 +59,17 @@ app.use(flash())
 app.use(express.json())
 // Ativando o helmet
 app.use(helmet())
+app.use(
+    helmet.contentSecurityPolicy({
+        directives: {
+            defaultSrc: ["'self'"],
+            scriptSrc: ["'self'", "https://cdn.jsdelivr.net", "https://ajax.googleapis.com"],
+            styleSrc: ["'self'", "https://cdn.jsdelivr.net"],
+            // Adicione outras diretivas conforme necessário
+        },
+    })
+  );
+
 // Esta linha é uma configuração do Express para lidar com dados enviados através de formulários HTML usando o método POST
 app.use(express.urlencoded({ extended: true }))
 // Carregando o conteúdo estático

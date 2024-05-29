@@ -1,0 +1,52 @@
+.container {
+    background-color: white !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3) !important; /* Sombra mais marcante */
+    padding: 30px !important;
+    border-radius: 10px !important; /* Bordas mais arredondadas */
+    max-width: 600px!important; /* Largura máxima do container */
+    width: 100% !important; 
+    margin: 80px; /* Margem automática para centralizar */
+}
+
+.btnsalvar {
+    margin-top: 20px;
+    width: 100px;
+    background: black !important;
+    color: white;
+    margin: 10px;
+}
+
+#bvoltar {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Cor do fundo do botão */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Remove a sublinhado */
+    text-align: center; /* Alinhamento de texto */
+    display: flex; /* Torna o elemento um flex container */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    transition: background-color 0.3s ease; /* Torna o elemento um flex container */
+    border: 1px solid gray;
+}
+
+#bvoltar:hover {
+    color: black;
+}
+
+.btnsalvar:hover {
+    background: white!important;
+    color: black;
+}
+
+#btnsalvarvoltar {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#btsalvarid {
+    border: 1px solid gray;
+}
