@@ -1,0 +1,17 @@
+<%- include("includes/head") %>
+
+<div id="box-cad-prod">
+    <form id="CadastroProdutoForm" action="" method="post">
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+        <label id="labelnome" for="NomeProduto">Nomde do Produto</label>
+        <input id="inputnome" type="text" name="NomeProduto" placeholder="Digite o nome do Produto">
+        <label id="labelpreco" for="preco">Digite seu preço</label>
+        <input id="inputopreco" type="text" name="preco" placeholder="Digite o seu preço">
+        <label id="labelquantidade" for="Quantidadeproduto">Quantidade Comprada</label>
+        <input id="inputquantidade" type="text" name="Quantidadeproduto" placeholder="Digite o quantidade">
+        <input id="submit" type="submit" value="cadastrar">
+    </form>
+    <a href="/">voltar</a>
+    <link rel="stylesheet" href="/assets/css/cadprod.css">
+</div>
+<%- include("includes/rodape") %>

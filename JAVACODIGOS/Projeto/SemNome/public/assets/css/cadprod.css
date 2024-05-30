@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F26B1D;
+}
+
+#box-cad-prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra preta */
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+}
+
+#CadastroProdutoForm {
+    display: flex;
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+#labelnome, #labelpreco, #labelquantidade {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#inputnome, #inputopreco, #inputquantidade {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submit {
+    padding: 12px;
+    background-color: #3E8C49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+#box-login-container {
+    display: flex;
+    justify-content: space-between; /* Para espaçar os elementos uniformemente */
+}
+
+#box-inform-cad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+#box-inform-cad a {
+    color: #3E8C49; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+#box-inform-cad a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}
+
+#img_login {
+    width: 130px;
+    height: 130px;
+}
+
+#box-cad-prod a {
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #3E8C49; /* Cor do link */
+    text-decoration: underline; /* Remove o sublinhado padrão do link */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+#box-cad-prod a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+}

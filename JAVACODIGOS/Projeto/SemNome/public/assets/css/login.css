@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F26B1D;
+}
+
+#box-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra preta */
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 320px;
+    
+}
+
+#login-form {
+    display: flex;
+    max-width: 300px;
+    max-height: 250px;
+    height: 100%;
+    padding-right: 40px;
+    width: 100%;
+    flex-direction: column;
+}
+
+#label-usuario, #label-senha {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#usuario, #senha {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submit {
+    padding: 12px;
+    background-color: #3E8C49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+#box-login-container {
+    display: flex;
+    justify-content: space-between; /* Para espaçar os elementos uniformemente */
+}
+
+
+#box-inform-cad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
+/* Estilo para o elemento #box-inform-cad */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+#box-inform-cad a {
+color: #3E8C49; /* Cor do link */
+text-decoration: none; /* Remove o sublinhado padrão do link */
+transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+#box-inform-cad a:hover {
+color: #0056b3; /* Cor do link ao passar o mouse */
+}
+#img_login {
+    width: 130px;
+    height: 130px;
+}

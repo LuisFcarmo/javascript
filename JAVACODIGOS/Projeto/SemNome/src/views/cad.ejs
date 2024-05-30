@@ -1,0 +1,17 @@
+<%- include('includes/head') %>
+
+<div id="cbox-cad">
+    <form id="ccad-form" action="http://localhost:3000/cadastro/efetuar" method="post">
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+        <label id="clabel-usuario" for="usuario">Usuário</label>
+        <input id="cusuario" type="text" name="usuario" placeholder="Digite seu usuário">
+        <label id="clabel-senha" for="senha">Senha</label>
+        <input id="csenha" type="password" name="senha" placeholder="Digite sua senha">
+        <input id="csubmit" type="submit" value="Cadastrar">
+    </form>
+
+
+    <link rel="stylesheet" href="http://localhost:3000/assets/css/cad.css">
+</div>
+
+<%- include('includes/rodape') %>

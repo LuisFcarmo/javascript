@@ -1,0 +1,21 @@
+<%- include('includes/head') %>
+
+<div id="box-login">
+    <form id="login-form" action="http://localhost:3000/login/efetuar" method="post">
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+        <label id="label-usuario" for="usuario">Usuário</label>
+        <input id="usuario" type="text" name="usuario" placeholder="Digite seu usuário">
+        <label id="label-senha" for="senha">Senha</label>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+        <input id="submit" type="submit" value="Logar">
+    </form>
+    <div id="box-inform-cad">
+        <img src="/assets/css/iconelogin.png" alt="" id="img_login">
+        <p>Ainda não possui cadastro?</p>
+        <a href="http://localhost:3000/cadastro/index">Cadastre-se aqui</a>
+    </div>
+
+    <link rel="stylesheet" href="http://localhost:3000/assets/css/login.css">
+</div>
+
+<%- include('includes/rodape') %>

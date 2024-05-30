@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#navbar-container {
+    background-color: #3E8C49; /* Cor de fundo da barra de navegação */
+}
+
+#navbar-container ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; /* Remove marcadores de lista */
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-container li {
+    align-self: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: inline-block; /* Exibe os itens de navegação horizontalmente */
+    margin-right: 20px; /* Espaçamento entre os itens de navegação */
+}
+
+#navbar-container a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    padding: 10px; /* Espaçamento interno dos links */
+}
+
+#navbar-container a:hover {
+    border-radius: 5px;
+    background-color: #F26B1D; /* Cor de fundo ao passar o mouse sobre os links */
+}
