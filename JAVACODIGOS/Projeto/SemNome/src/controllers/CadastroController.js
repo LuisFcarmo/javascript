@@ -1,4 +1,4 @@
-const Cadastro = require('../models/CadastroModel')
+const { Cadastro } = require('../models/CadastroModel')
 
 module.exports = {
     index: (req, res) => {
@@ -19,10 +19,9 @@ module.exports = {
                 return 
             }
 
-            console.log('logado com sucesso')
             req.session.save(function () {
                 res.locals.sucess = true
-                return res.redirect('http://localhost:3000/')
+                return res.redirect('http://localhost:3000/login/index')
             })
         } catch (e) {
             console.log(e)

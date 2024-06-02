@@ -1,7 +1,7 @@
 <%- include("includes/head") %>
 
 <div id="box-cad-prod">
-    <form id="CadastroProdutoForm" action="" method="post">
+    <form id="CadastroProdutoForm" action="http://localhost:3000/Produto/efetuar" method="post">
         <input type="hidden" name="_csrf" value=<%= csrfToken %>>
         <label id="labelnome" for="NomeProduto">Nomde do Produto</label>
         <input id="inputnome" type="text" name="NomeProduto" placeholder="Digite o nome do Produto">

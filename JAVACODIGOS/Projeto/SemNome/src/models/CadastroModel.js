@@ -66,4 +66,4 @@ class Cadastro  {
     }
 }
 
-module.exports = Cadastro
+module.exports = {Cadastro, CadastroModel}

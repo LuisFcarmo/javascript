@@ -18,5 +18,6 @@ route.post('/cadastro/efetuar', CadastroController.cadastro)
 
 //rotas do Produto
 route.get('/Produto/index', ProductoController.index)
+route.post('/Produto/efetuar', ProductoController.cadastro)
 
 module.exports = route;

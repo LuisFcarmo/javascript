@@ -47,3 +47,66 @@
         height: auto; /* Altura automática para acomodar o conteúdo */
     }
 }
+
+/* Estilos gerais para os botões */
+/* Estilos gerais para os botões */
+.btn-editar, .btn-diminuir {
+    width: 50px;
+    height: 20px;
+    display: inline-block; /* Faz o link se comportar como um bloco inline */
+    padding: 10px 20px; /* Espaçamento interno para parecer um botão */
+    margin: 5px; /* Margem para espaçamento entre os botões */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #fff; /* Cor do texto */
+    border: 1px solid; /* Borda com a mesma cor do fundo */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave para mudanças de cor */
+}
+
+/* Estilos específicos para o botão editar */
+.btn-editar {
+    background-color: #007bff; /* Cor de fundo azul */
+    border-color: #007bff; /* Cor da borda */
+}
+
+.btn-editar:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-color: #0056b3; /* Cor da borda ao passar o mouse */
+}
+
+.btn-editar:active {
+    background-color: #004085; /* Cor de fundo ao clicar */
+    border-color: #004085; /* Cor da borda ao clicar */
+}
+
+/* Estilos específicos para o botão diminuir */
+.btn-diminuir {
+    background-color: #dc3545; /* Cor de fundo vermelha */
+    border-color: #dc3545; /* Cor da borda */
+}
+
+.btn-diminuir:hover {
+    background-color: #c82333; /* Cor de fundo ao passar o mouse */
+    border-color: #c82333; /* Cor da borda ao passar o mouse */
+}
+
+.btn-diminuir:active {
+    background-color: #bd2130; /* Cor de fundo ao clicar */
+    border-color: #bd2130; /* Cor da borda ao clicar */
+}
+
+#opc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+

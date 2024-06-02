@@ -1,9 +1,18 @@
-const Contato = require('../models/ContatoModel')
+const Produtos = require('../models/ProdutoModel')
 
 module.exports = {
-    index: (req, res) => {
-        res.render('index')
+    index: async (req, res) => {
+        try {
+            let produtos
+            if(req.session.usuario) {
+                produtos = await Produtos.BuscarProdutos()
+            } else {
+                produtos = [{}]
+            }
+            res.render('index', {produtos})
+
+        } catch (e) {
+            console.log(e)
+        }
     }
-
-
 }

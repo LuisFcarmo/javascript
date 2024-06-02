@@ -3,28 +3,17 @@
 
 <section id="content">
     <div id = "container">
-        <div id = "bloco" >
-            <p>Nome:</p>
-            <p>Em estoque:</p>
-            <p>Preço:</p>
-        </div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-        <div id = "bloco" ></div>
-
+        <% produtos.forEach(produto => {%>
+            <div id = "bloco" >
+                <p>Nome: <span class="destaque"><%= produto.NomeProduto %></span></p>
+                <p>Em estoque: <span class="destaque"><%= produto.Quantidadeproduto %></span></p>
+                <p>Preço: <span class="destaque"><%= produto.preco %></span></p>
+                <div id="opc">
+                    <a class="btn-editar" href="/contato/index/<%= produto._id %>">Editar</a>
+                    <a class="btn-diminuir" href="/contato/delete/<%= produto._id %>">Diminuir</a>
+                </div>
+            </div>
+        <% }) %>
     </div>
 </section>
 <link rel="stylesheet" href="/assets/css/index.css">
