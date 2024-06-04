@@ -4,6 +4,7 @@ module.exports = {
     index: async (req, res) => {
         try {
             let produtos
+        
             if(req.session.usuario) {
                 produtos = await Produtos.BuscarProdutos()
             } else {

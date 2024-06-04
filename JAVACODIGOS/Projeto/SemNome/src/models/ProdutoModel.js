@@ -15,6 +15,10 @@ class Produto {
         this.erros = []
     }
 
+    static EditProd(body, id) {
+        console.log(body, id)
+    }
+
     async Cadastrar() {
         this.CleanUp()
         console.log(this.body)

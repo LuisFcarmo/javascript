@@ -47,8 +47,14 @@ export default class User extends Model {
         });
         //fazendo o hash do password
         this.addHook('beforeSave', async (user) => {
-            user.password_hash = await bcryptjs.hash(user.password, 8)
+            if(user.password){
+                user.password_hash = await bcryptjs.hash(user.password, 8)
+            }
         });
         return this;
+    }
+
+    async passwordIsValid (password) {
+        return bcryptjs.compare(password, this.password_hash)
     }
 }

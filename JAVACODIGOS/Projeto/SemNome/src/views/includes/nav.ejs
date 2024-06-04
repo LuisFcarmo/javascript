@@ -5,7 +5,11 @@
         <li><a href="#">Em falta</a></li>
         <li><a href="#">Lista do Mês</a></li>
         <li><a href="http://localhost:3000/Produto/index">Cadastrar Produto</a></li>
-        <li><a href="http://localhost:3000/login/index">Login</a></li>
+        <% if(!usuario) {%>
+            <li><a href="http://localhost:3000/login/index">Login</a></li>
+        <% } else { %>
+            <li><a href="http://localhost:3000/logout">Deslogar</a></li>
+        <% } %>
         <li><a href="#">Sobre</a></li>
     </ul>
     <link rel="stylesheet" href="/assets/css/nav.css">

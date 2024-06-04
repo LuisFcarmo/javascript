@@ -2,6 +2,13 @@
 <%- include('includes/nav') %>
 
 <section id="content">
+    <% if (erros.length !== 0) { %>
+        <div class = "SystemMessageErro">
+            <% erros.map((erro) => {%>
+                <p><%= erro %></p>
+            <% }) %>
+        </div>
+    <% } %>
     <div id = "container">
         <% produtos.forEach(produto => {%>
             <div id = "bloco" >
@@ -9,8 +16,8 @@
                 <p>Em estoque: <span class="destaque"><%= produto.Quantidadeproduto %></span></p>
                 <p>Preço: <span class="destaque"><%= produto.preco %></span></p>
                 <div id="opc">
-                    <a class="btn-editar" href="/contato/index/<%= produto._id %>">Editar</a>
-                    <a class="btn-diminuir" href="/contato/delete/<%= produto._id %>">Diminuir</a>
+                    <a class="btn-editar" href="/produto/indexEdit?id=<%= produto._id %>">Editar</a>
+                    <a class="btn-diminuir" href="/contato/delete?id=<%= produto._id %>">Diminuir</a>
                 </div>
             </div>
         <% }) %>

@@ -7,7 +7,18 @@ exports.checkCsrfError = (err, req, res, next) => {
 };
 
 exports.csrfMiddleware = (req, res, next) => {
+    res.locals.erros = req.flash('errors')
+    res.locals.usuario = req.session.usuario
     res.locals.csrfToken = req.csrfToken(); // Corrigido o nome da função
     next();
 };
 
+
+exports.ConfirmLogin = (req, res, next) => {
+    if (!req.session.usuario) {
+        req.flash('errors', 'Você precisa fazer login para utilizar esta funcionalidade.');
+        req.session.save(() => res.redirect('/'));
+        return
+    }
+    next()
+}
