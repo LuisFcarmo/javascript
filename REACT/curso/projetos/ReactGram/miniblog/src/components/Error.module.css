@@ -1,0 +1,19 @@
+.errorcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8d7da; /* Cor de fundo vermelha claro */
+    max-width: 400px;
+    max-height: 25px;
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #f5c6cb; /* Borda vermelha clara */
+    border-radius: 5px; /* Borda arredondada */
+    margin: 20px 0; /* Margem superior e inferior */
+
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+.errorcontainer p {
+    color: rgba(0, 0, 0, 0.794);
+}

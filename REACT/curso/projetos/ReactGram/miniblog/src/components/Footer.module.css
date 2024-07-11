@@ -1,0 +1,14 @@
+/* CSS para o footer */
+.Footer {
+    color: rgb(255, 255, 255); /* Tom de branco mais claro */
+    background-color: rgba(6, 6, 6, 0.847); /* Background escuro */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 0.5s; /* Transição suave para opacidade */
+  }

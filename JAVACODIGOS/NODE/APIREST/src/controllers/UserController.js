@@ -35,6 +35,7 @@ class UserController {
             return res.json(null)
         }
     }
+    
     //update
     async update (req, res) {
         const { id } = req.params

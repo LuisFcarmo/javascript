@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const validator = require('validator')
 const bcryptjs = require('bcryptjs')
+const session = require('express-session')
 
 //criar o esquema no banco
 const CadastroSchema = new mongoose.Schema({

@@ -1,9 +1,9 @@
 import { Router } from "express";
 import UserController from "../controllers/UserController";
-import User from "../models/User.Models";
+import LoginRequired from "../middlewares/LoginRequired";
 
 const router = new Router();
-router.get('/', UserController.index)
+router.get('/', LoginRequired, UserController.index)
 router.get('/:id', UserController.show)
 router.post('/store', UserController.store)
 router.put('/update/:id', UserController.update)

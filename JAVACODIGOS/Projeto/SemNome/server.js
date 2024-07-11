@@ -88,7 +88,6 @@ app.use(csrfMiddleware);
 app.use(checkCsrfError);
 // Usa nossas rotas
 app.use(routes);
-
 // Verificando se o banco de dados foi conectado para então ligar o servidor
 app.on('pronto', () => {
     app.listen(3000, () => {

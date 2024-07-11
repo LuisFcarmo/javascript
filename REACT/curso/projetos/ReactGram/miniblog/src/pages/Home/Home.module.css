@@ -1,0 +1,109 @@
+.ContainerHome {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a altura mínima da área principal seja a altura da viewport */
+    overflow: hidden; /* Evita que o conteúdo vaze para fora da área principal */
+}  
+
+.MainContent {
+    flex: 1; /* Expande para ocupar todo o espaço disponível */
+    overflow-y: auto; /* Permite rolagem vertical quando o conteúdo excede a altura */
+    padding: 20px; /* Adapte conforme necessário */
+}
+
+.TitleHome {
+    font-size: 25px;
+    margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
+    text-align: center; /* Centraliza o texto */
+}
+
+.FormHome {
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário para não ocupar toda a largura da tela */
+    margin-bottom: 20px; /* Espaçamento inferior para separar do próximo elemento */
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza o formulário horizontalmente */
+    align-items: center; /* Centraliza o formulário verticalmente */
+}
+
+.textmoderno {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    max-width: 400px; /* Limita a largura máxima do input */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: transparent;
+    border-bottom: 2px solid gray;
+    border-radius: 4px;
+    background-color: #f8f8f800;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.btnpesquisar {
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnpesquisar:hover {
+    background: linear-gradient(45deg, #a8e063, #56ab2f);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .ContainerHome {
+        padding: 10px;
+    }
+
+    .TitleHome {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .FormHome {
+        flex-direction: column; /* Altera para uma disposição em coluna */
+        align-items: stretch; /* Estica os itens na largura máxima */
+        margin-bottom: 15px;
+    }
+
+    .textmoderno {
+        max-width: none; /* Remove a limitação máxima de largura */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+.sectionpost {
+    display: grid;
+    max-width: 1000px;
+    max-height: 500px;
+    grid-template-columns: 1fr 1fr; /* Uma única coluna */
+    grid-template-rows: 1fr 1fr ;
+    gap: 20px; /* Espaçamento entre os elementos */
+    grid-auto-flow: column; /* Organiza os itens em colunas */
+  }
+  
+.sectionpost > * {
+    grid-column: span 1; /* Cada elemento ocupa três colunas */
+}
+
+.sectionBarradePesquisa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}

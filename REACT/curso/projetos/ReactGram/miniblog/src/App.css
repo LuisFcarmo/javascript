@@ -1,0 +1,46 @@
+body {
+  background-color: #F6FCFF;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: sans-serif;
+}   
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+a,
+nav button {
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  color: #000;
+  transition: .4s;
+  font-size: 1em;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: #bbb;
+}
+
+.container-prc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+span {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}

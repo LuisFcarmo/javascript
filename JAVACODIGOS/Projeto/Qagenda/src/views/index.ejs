@@ -31,9 +31,9 @@
                                 <td><%= contato.telefone %></td>
                                 <td><%= contato.sobrenome %></td>
                                 <td><%= contato.email %></td>
+                            </tr>
                                 <td><a class="btn btn-primary" href="/contato/index/<%= contato._id %>">Editar</a></td>
                                 <td><a class="btn btn-danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
-                            </tr>
                         <% }) %>
                     </tbody>
                 </table>

@@ -1,0 +1,44 @@
+.NVB {
+    border: 10px rgb(44, 44, 44) solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.NVBLG {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+.NVDUL {
+    padding: 0;  /* Remover padding padrão */
+    margin: 0;  
+    display: flex;
+    gap: 15px;
+    list-style-type: none;     
+}
+
+.NVDUL ul li {
+    margin-right: 20px;
+}
+
+.NVB ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+
+}
+
+.actived {
+    color: white !important; 
+    background-color: black;
+    border-radius: 5px;
+}

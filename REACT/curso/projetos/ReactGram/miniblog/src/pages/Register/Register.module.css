@@ -1,0 +1,65 @@
+.register {
+    align-self: center;
+    text-align: center;
+    background-color: white; /* fundo branco */
+    color: black; /* texto preto */
+    padding: 30px; /* padding maior */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px; /* largura maior */
+}
+
+.register p {
+    color: gray;
+    font-size: 14px; /* tamanho da fonte ajustado */
+}
+
+.FormsCad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* gap maior */
+    justify-content: center;
+    align-items: center;
+}
+
+.FormLabel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    color: black; /* texto preto */
+    font-size: 14px; /* tamanho da fonte ajustado */
+    font-weight: bold; /* fonte em negrito */
+}
+
+.FormLabel span {
+    align-self: self-start;
+    margin-right: 10px; /* espaço entre span e input */
+}
+
+.FormInput {
+    width: calc(100% - 60px); /* ajusta a largura do input */
+    padding: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1.5px solid black;
+    font-size: 14px; /* tamanho da fonte ajustado */
+}
+
+.FormButton {
+    width: 50%; /* reduz a largura do botão */
+    padding: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* gradiente de cor */
+    color: white;
+    border: none;
+    border-radius: 25px; /* bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.FormButton:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* gradiente invertido ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
