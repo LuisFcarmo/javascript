@@ -11,6 +11,8 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Login from './pages/Login/Login'
 import Register from './pages/Register/Register';
+import Search from './pages/Search/Search';
+import Post from './pages/Post/Post';
 
 
 //components
@@ -21,6 +23,7 @@ import Footer from './components/Footer';
 import { AuthProvider } from './context/AuthContext';
 import CreatePost from './pages/CreatePost/CreatePost';
 import DashBoard from './pages/DashBoard/DashBoard';
+import EditPost from './pages/EditPost/EditPost';
 
 function App() {
   const [ user, setUser ] = useState(undefined)
@@ -57,6 +60,9 @@ function App() {
               <Route path = '/register' element = {!user ? <Register/> : <Navigate to = "/"/>}/>
               <Route path = '/posts/create' element = { user ?  <CreatePost/> : <Navigate to = "/register"/> }/>
               <Route path = '/dashboard' element = { user ? <DashBoard/> : <Navigate to = "/register"/>}/>
+              <Route path = '/search' element = { user ? <Search/> : <Navigate to = "/register"/>}/>
+              <Route path = '/post/:id' element = { user ? <Post/> : <Navigate to = "/register"/>}/>
+              <Route path = '/post/edit/:id' element = { user ? <EditPost/> : <Navigate to = "/register"/>}/>
             </Routes>
           </div>
           <Footer/>

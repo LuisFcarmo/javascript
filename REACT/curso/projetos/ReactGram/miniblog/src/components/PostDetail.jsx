@@ -1,12 +1,11 @@
 import React from 'react';
 import styles from './PostDetail.module.css';
-
-const PostDetail = ({ link, titulo, conteudo, tags, dono }) => {
+import { Link } from 'react-router-dom';
+const PostDetail = ({ link, titulo, tags, dono, id }) => {
   return (
     <div className={styles['post-detail-container']}>
         <h4>{titulo}</h4>
         <img src={link} alt="Imagem do post" className={styles['post-image']} />
-        <p>{conteudo}</p>
         <ul className={styles['tag-list']}>
             {tags.map((tag, index) => (
             <li key={index} className={styles['tag-list-item']}>
@@ -16,6 +15,7 @@ const PostDetail = ({ link, titulo, conteudo, tags, dono }) => {
             ))}
         </ul>
         <h4 className={styles['post-author']}>Publicado por {dono}</h4>
+        <Link to = {`/post/${id}`}>Ler</Link>
     </div>
   );
 };

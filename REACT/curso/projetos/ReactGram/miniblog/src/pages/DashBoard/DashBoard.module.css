@@ -1,0 +1,41 @@
+.dashboard {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.dashboard h2 {
+    font-size: 2.2em;
+    margin-bottom: .5em;
+}
+
+.dashboard p {
+    color: #aaa
+}
+
+.postheader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    width: 80%;
+    padding: 10px;
+}
+
+.potrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEE;
+    width: 80%;
+    gap: 50px;
+}
+
+.dashacoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

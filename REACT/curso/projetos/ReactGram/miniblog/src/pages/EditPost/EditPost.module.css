@@ -1,0 +1,250 @@
+.post {
+    align-self: center;
+    text-align: center;
+    background-color: white; /* fundo branco */
+    color: black; /* texto preto */
+    padding: 30px; /* padding maior */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px; /* largura maior */
+  }
+  
+  .post p {
+    color: gray;
+    font-size: 14px; /* tamanho da fonte ajustado */
+  }
+  
+  .FormsPost {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* gap maior */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .FormLabel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    color: black; /* texto preto */
+    font-size: 14px; /* tamanho da fonte ajustado */
+    font-weight: bold; /* fonte em negrito */
+  }
+  
+  .FormLabel span {
+    align-self: self-start;
+    margin-right: 10px; /* espaço entre span e input */
+  }
+  
+  .FormInput {
+    width: calc(100% - 60px); /* ajusta a largura do input */
+    padding: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1.5px solid black;
+    font-size: 14px; /* tamanho da fonte ajustado */
+  }
+  
+  .FormButton {
+    width: 50%; /* reduz a largura do botão */
+    padding: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* gradiente de cor */
+    color: white;
+    border: none;
+    border-radius: 25px; /* bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .FormButton:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* gradiente invertido ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Media Queries */
+  
+  /* Celulares pequenos (até 480px) */
+  @media (max-width: 480px) {
+    .post {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .FormInput {
+      width: 100%;
+    }
+  
+    .FormButton {
+      width: 100%;
+    }
+  
+    .FormsPost {
+      gap: 5px;
+      padding: 5px;
+    }
+  
+    .FormLabel {
+      gap: 3px;
+      font-size: 12px;
+    }
+  
+    .FormInput {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .FormButton {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .post p {
+      font-size: 12px;
+    }
+  
+    .post {
+      margin: 0 auto;
+    }
+  }
+  
+  /* Celulares médios (até 768px) */
+  @media (max-width: 768px) {
+    .post {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .FormInput {
+      width: 100%;
+    }
+  
+    .FormButton {
+      width: 100%;
+    }
+  
+    .FormsPost {
+      gap: 8px;
+      padding: 10px;
+    }
+  
+    .FormLabel {
+      gap: 5px;
+      font-size: 12px;
+    }
+  
+    .FormInput {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .FormButton {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .post p {
+      font-size: 12px;
+    }
+  
+    .post {
+      margin: 0 auto;
+    }
+  }
+  
+  /* Tablets (até 1024px) */
+  @media (max-width: 1024px) {
+    .post {
+      width: 80%;
+      padding: 25px;
+    }
+  
+    .FormInput {
+      width: calc(100% - 40px);
+    }
+  
+    .FormButton {
+      width: 60%;
+    }
+  
+    .FormsPost {
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    .FormLabel {
+      gap: 7px;
+      font-size: 13px;
+    }
+  
+    .FormInput {
+      font-size: 13px;
+      padding: 10px;
+    }
+  
+    .FormButton {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .post p {
+      font-size: 13px;
+    }
+  
+    .post {
+      margin: 0 auto;
+    }
+  }
+  
+  /* Desktops pequenos (até 1200px) */
+  @media (max-width: 1200px) {
+    .post {
+      width: 70%;
+      padding: 25px;
+    }
+  
+    .FormInput {
+      width: calc(100% - 40px);
+    }
+  
+    .FormButton {
+      width: 60%;
+    }
+  
+    .FormsPost {
+      gap: 12px;
+      padding: 20px;
+    }
+  
+    .FormLabel {
+      gap: 8px;
+      font-size: 14px;
+    }
+  
+    .FormInput {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .FormButton {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    .post p {
+      font-size: 14px;
+    }
+  
+    .post {
+      margin: 0 auto;
+    }
+  }
+  .postimage {
+    max-width: 200px;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }

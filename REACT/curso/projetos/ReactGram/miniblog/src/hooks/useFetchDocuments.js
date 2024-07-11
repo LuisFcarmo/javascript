@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { db } from '../firebase/config'
-import { collection, query, orderBy, onSnapshot, wherem, QuerySnapshot } from "firebase/firestore";
+import { collection, query, orderBy, onSnapshot, wherem, QuerySnapshot, where } from "firebase/firestore";
 
 export const useFetchDocuments = (docCollection, search = null, uid = null) => {
     const [ documents, setDocuments ] = useState(null)
@@ -15,13 +15,27 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) => {
 
             setLoading(true)
             //buscando a referência da coleção no meu banco de dados
-            const collectionRef = await collection(db, docCollection)
-
+            const collectionRef = collection(db, docCollection)
             try {
                 let querry;
-                //busca
-                //dashboard
-                querry = await query(collectionRef, orderBy("createdAt", "desc"))
+                if(search) {
+                    querry = await query(
+                        collectionRef, 
+                        where("tags", "array-contains", search),
+                        orderBy("createdAt", "desc")
+                    );
+                }
+                else if (uid) {
+                    console.log(uid)
+                    querry = await query (
+                        collectionRef,
+                        where("uid","==", uid),
+                        orderBy("createdAt", "desc")
+                    )
+                }
+                else {
+                        querry = await query(collectionRef, orderBy("createdAt", "desc"))
+                }
                 await onSnapshot(querry, (QuerySnapshot) => {
                     setDocuments (
                         QuerySnapshot.docs.map((doc) => ({

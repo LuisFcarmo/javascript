@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../Home/Home.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { useFetchDocuments } from '../../hooks/useFetchDocuments';
 import PostDetail from '../../components/PostDetail';
 import Footer from '../../components/Footer';
@@ -8,11 +8,13 @@ import Footer from '../../components/Footer';
 const Home = () => {
   const [query, setQuery] = useState('');
   const { documents: posts, loading } = useFetchDocuments('posts');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Query:', query);
-    // Lógica de pesquisa ou filtragem aqui
+    if(query) {
+      return navigate(`/search?q=${query}`)
+    }
   };
 
   return (
@@ -29,7 +31,7 @@ const Home = () => {
               onChange={(e) => setQuery(e.target.value)}
               className={styles.textmoderno}
             />
-            <button type="submit" className={styles.btnpesquisar}>
+            <button className={styles.btnpesquisar}>
               Pesquisar
             </button>
           </form>
@@ -45,10 +47,10 @@ const Home = () => {
         <section className = {styles.sectionpost}>
           {posts && posts.map((post) => (
               <PostDetail
-                key={post.id}
+                key = {post.id}
+                id={post.id}
                 link={post.image}
                 titulo={post.title}
-                conteudo={post.body}
                 tags={post.tags}
                 dono={post.createdBy}
               />
