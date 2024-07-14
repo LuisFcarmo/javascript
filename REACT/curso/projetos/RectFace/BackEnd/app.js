@@ -18,10 +18,11 @@ const router = require("./ROUTES/Router")
 //db connection
 require("./config/db.js")
 
-app.use(router)
-
 app.use(express.json())
 app.use(express.urlencoded({extended:  false}))
+app.use(router)
+
+
 app.listen(port, () => {
     console.log(`app rodando na porta http://localhost:${port}/`)
 })

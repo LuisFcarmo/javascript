@@ -13,6 +13,6 @@ const imageSchema = new Schema ({
     }
 )
 
-const Photo = mongoose.model(imageSchema)
+const Image = mongoose.model("Image", imageSchema)
 
-module.exports = Photo
+module.exports = Image
