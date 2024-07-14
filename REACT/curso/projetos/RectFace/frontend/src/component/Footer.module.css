@@ -1,0 +1,10 @@
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.341);
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo do footer */
+    padding: 10px 0; /* Espaçamento interno */
+}

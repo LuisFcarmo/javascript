@@ -2,7 +2,6 @@ const { validationResult } = require("express-validator")
 
 const validate = (req, res, next) => {
     const erros = validationResult(req);
-    console.log(erros)
     if(erros.isEmpty()) return next();
 
 

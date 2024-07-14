@@ -1,0 +1,32 @@
+.navbarcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Cor de fundo da barra de navegação */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.navbarcontainer a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+}
+
+.navbarcontainer a:hover {
+    color: lightgray; /* Cor do texto dos links ao passar o mouse */
+}
+
+.NavBarStyle {
+    list-style-type: none;   
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.NavBarStyle li {
+    margin-right: 20px;
+}
+
+.actived {
+    font-weight: bold;
+    color: red; /* Cor dos links ativos */
+}

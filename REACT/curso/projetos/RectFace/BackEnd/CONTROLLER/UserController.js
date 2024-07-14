@@ -18,7 +18,7 @@ const register = async (req, res) => {
     const user = await User.findOne({email});
 
     if(user) {
-        res.status(422).json({erros: ["Por favor, utilize outro email"]});
+        res.status(422).json({errors: ["Por favor, utilize outro email"]});
         return 
     }
 
@@ -35,7 +35,7 @@ const register = async (req, res) => {
 
     //if user create sucessfully, return the token
     if(!newUser) {
-        res.status(422).json({erros: ["Houver algum erro, por favor volte mais tarde"]});
+        res.status(422).json({errors: ["Houver algum erro, por favor volte mais tarde"]});
         return 
     }
 
@@ -50,13 +50,13 @@ const login = async (req, res) => {
     const user = await User.findOne({email})
    
     if(!user) {
-        res.status(404).json({erros: ["O email não existe no nosso banco de dados"]})
+        res.status(404).json({errors: ["O email não existe no nosso banco de dados"]})
         return
     }
     
     if(!(await bcrypt.compare(password, user.password))) {
-        res.status(422).json({erros: ["senha invalida"]})
-
+        res.status(422).json({errors: ["senha invalida"]})
+        return
     }
 
     res.status(201).json({

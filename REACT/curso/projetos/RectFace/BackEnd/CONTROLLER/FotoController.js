@@ -20,7 +20,7 @@ const registerFoto = async (req, res) => {
 
     if(!newPhoto) {
         return res.send(422).json({
-            erros: ["houve um problema por favor tente novamente mais tarde"]
+            errors: ["houve um problema por favor tente novamente mais tarde"]
         })
     }
 
@@ -35,19 +35,19 @@ const updateFoto = async (req, res) => {
 
         // Verifica se o ID é válido
         if (!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(400).json({ erros: ["ID inválido"] });
+            return res.status(400).json({ errors: ["ID inválido"] });
         }
 
         // Encontra a foto pelo ID
         const foto = await Image.findById(id);
 
         if (!foto) {
-            return res.status(404).json({ erros: ["Foto não encontrada"] });
+            return res.status(404).json({ errors: ["Foto não encontrada"] });
         }
 
         // Verifica se o usuário tem permissão para editar a foto
         if (!foto.userId.equals(reqUser._id)) {
-            return res.status(403).json({ erros: ["Usuário não tem permissão para editar imagens que não pertencem a ele"] });
+            return res.status(403).json({ errors: ["Usuário não tem permissão para editar imagens que não pertencem a ele"] });
         }
 
         // Atualiza o título da foto, se fornecido
@@ -65,7 +65,7 @@ const updateFoto = async (req, res) => {
         });
     } catch (error) {
         console.error(error);
-        res.status(500).json({ erros: ["Erro interno ao atualizar foto"] });
+        res.status(500).json({ errors: ["Erro interno ao atualizar foto"] });
     }
 }
 
@@ -81,12 +81,12 @@ const removeFoto = async (req, res) => {
         const img = await Image.findById(id)
         
         if(!img) {
-            res.status(404).json({erros: ["foto não encontrada"]})
+            res.status(404).json({errors: ["foto não encontrada"]})
             return;
         }
 
         if(!img.userId.equals(reqUser._id)) {
-            res.status(422).json({erros: ["ocorreu um erro por favor tente novamente mais tarde"]})
+            res.status(422).json({errors: ["ocorreu um erro por favor tente novamente mais tarde"]})
             return
         }
 
@@ -103,7 +103,7 @@ const removeFoto = async (req, res) => {
 
 const getAllfoto = async (req, res) => {
     const fotos = await Image.find({}).sort([["createdAt", -1]]).exec()
-    if(!fotos) return res.status(404).json({erros: ["aconteceu um erro por favor volte mais tarde"]})
+    if(!fotos) return res.status(404).json({errors: ["aconteceu um erro por favor volte mais tarde"]})
     return res.status(200).json(fotos)
 }
 
@@ -112,7 +112,7 @@ const getAllFotosCurrentUser = async (req, res) => {
 
     try {
         const fotos = await Image.find({userId: userRef._id});
-        if(!fotos) return res.status(404).json({erros: ["Aconteceu um erro por favor volte mais tarde"]})
+        if(!fotos) return res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
             if(fotos.length > 0) {
             return res.status(200).json({
                 fotos: fotos,
@@ -125,7 +125,7 @@ const getAllFotosCurrentUser = async (req, res) => {
             })
         }
     } catch (error) {
-      return res.status(404).json({erros: ["Aconteceu um erro por favor volte mais tarde"]})
+      return res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
     }
 }
 
@@ -134,7 +134,7 @@ const getAllFotosById = async (req, res) => {
 
     try {
         const fotos = await Image.find({userId: id}).sort([["createdAt", -1]]).exec();
-        if(!fotos) return res.status(404).json({erros: ["Aconteceu um erro"]})
+        if(!fotos) return res.status(404).json({errors: ["Aconteceu um erro"]})
         if(fotos.length > 0) {
             return res.status(200).json({
                 fotos: fotos,
@@ -148,7 +148,7 @@ const getAllFotosById = async (req, res) => {
         }
     
     } catch (error) {
-        res.status(404).json({erros: ["Aconteceu um erro por favor volte mais tarde"]})
+        res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
     }
 }
 
@@ -156,11 +156,11 @@ const getFotoById = async (req, res) => {
     const { id } = req.params;
     try {
         const foto = await Image.findById(id);
-        if(!foto) return res.status(404).json({erros: ["Foto não consta no nosso banco de dados"]})
+        if(!foto) return res.status(404).json({errors: ["Foto não consta no nosso banco de dados"]})
         
         return res.status(200).json(foto);
         } catch (error) {
-            res.status(404).json({erros: ["Aconteceu um erro por favor volte mais tarde"]})
+            res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
     }
 }
 
@@ -176,7 +176,7 @@ const likefoto = async (req, res) => {
     const foto = await Image.findById(id)
 
     if(!foto) {
-        return res.status(404).json({erros: ["erros ao buscar a foto no banco de dados"]})
+        return res.status(404).json({errors: ["erros ao buscar a foto no banco de dados"]})
     }
 
     if(foto.likes.includes(userReq._id)){
@@ -218,7 +218,7 @@ const ComentFoto = async (req, res) => {
     const user = await User.findById(userReq._id)
 
     if(!foto) {
-        res.status(404).json([{erros: "aconteceu um erro"}])   
+        res.status(404).json([{errors: "aconteceu um erro"}])   
         return
     }
     

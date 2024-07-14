@@ -6,9 +6,13 @@ const cors = require("cors");
 const port = process.env.PORT;
 
 const app = express();
-//Solve cors
-app.use(cors({credentials:true, origin: "https://localhost:3000"}))
 
+//Solve cors
+app.use(cors({
+    origin: "http://localhost:3000",  // Permitir requisições somente do http://localhost:3000
+    credentials: true,  // Permitir credenciais (cookies, cabeçalhos de autorização)
+}));
+  
 //upload de imagens
 app.use("/uploads", express.static(path.join(__dirname, "./uploads")))
 
