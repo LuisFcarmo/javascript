@@ -33,6 +33,7 @@ router.post("/login",
 
 router.get("/profile", 
     authGuard, 
+    validate,
     getCurrentUser)
 
 router.put("/", 

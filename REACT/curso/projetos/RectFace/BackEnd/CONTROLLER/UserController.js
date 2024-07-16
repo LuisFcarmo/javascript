@@ -72,7 +72,7 @@ const getCurrentUser = async (req, res) => {
 }
 
 const update = async (req, res) => {
-    const { name, password, bio} = req.body
+    const { nome, password, bio} = req.body
 
     let profileImage = null
 
@@ -81,11 +81,11 @@ const update = async (req, res) => {
     }
     
     const reqUser = req.user
-
+    console.log(req.body)
     const user = await User.findById(new mongoose.Types.ObjectId(reqUser._id)).select("-password");
 
-    if(name) {
-        user.name = name;
+    if(nome) {
+        user.name = nome;
     }
 
     if(password) {
@@ -103,7 +103,6 @@ const update = async (req, res) => {
     }
 
     await user.save()
-    console.log(user)
     res.status(200).json(user)
 }
 

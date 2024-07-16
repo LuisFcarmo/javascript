@@ -1,0 +1,39 @@
+.MakePostContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.317);
+
+}
+
+.FormMakePost {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+}
+
+.btnPostar {
+    background-color: #007BFF; /* Azul */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, transform 0.3s; /* Animação suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.btnPostar:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.btnPostar:active {
+    transform: translateY(0); /* Remover elevação ao clicar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra original */
+}
