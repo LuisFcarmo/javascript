@@ -1,0 +1,26 @@
+.imgPost {
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+}
+
+.containerDashBoard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.317);
+}
+
+.recentpost {
+    display: grid;
+    gap: 20px;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.actionfoto {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

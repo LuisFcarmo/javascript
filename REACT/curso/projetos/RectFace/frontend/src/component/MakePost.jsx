@@ -12,7 +12,7 @@ const MakePost = () => {
     const [ title, setTitle ] = useState("")
     const [ filename, setFileName ] = useState("")
     const dispatch = useDispatch()
-    const { foto, message, error, loading  } = useSelector((state) => state.foto)
+    const { message, error, loading  } = useSelector((state) => state.foto)
 
 
     const handleSubmit = async (event) => {

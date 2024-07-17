@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "../auth/Auth.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -20,7 +20,6 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-       
         const user = {
             email: email,
             password: senha,
@@ -28,7 +27,7 @@ const Login = () => {
         
         dispatch(login(user))
     };
-   
+
     useEffect(() => {
         dispatch(reset())
     }, [dispatch])

@@ -114,7 +114,8 @@ const getAllFotosCurrentUser = async (req, res) => {
         const fotos = await Image.find({userId: userRef._id});
         if(!fotos) return res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
             if(fotos.length > 0) {
-            return res.status(200).json({
+                console.log(fotos)
+                return res.status(200).json({
                 fotos: fotos,
                 status: "usuario possui fotos"
             });
@@ -131,7 +132,7 @@ const getAllFotosCurrentUser = async (req, res) => {
 
 const getAllFotosById = async (req, res) => {
     const { id } = req.params;
-
+    console.log(id)
     try {
         const fotos = await Image.find({userId: id}).sort([["createdAt", -1]]).exec();
         if(!fotos) return res.status(404).json({errors: ["Aconteceu um erro"]})
@@ -154,12 +155,16 @@ const getAllFotosById = async (req, res) => {
 
 const getFotoById = async (req, res) => {
     const { id } = req.params;
+
+    console.log("meu id" + id)
+    console.log("entrei")
     try {
         const foto = await Image.findById(id);
         if(!foto) return res.status(404).json({errors: ["Foto não consta no nosso banco de dados"]})
-        
         return res.status(200).json(foto);
-        } catch (error) {
+        
+    } catch (error) {
+            //console.log(error)
             res.status(404).json({errors: ["Aconteceu um erro por favor volte mais tarde"]})
     }
 }

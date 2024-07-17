@@ -1,0 +1,29 @@
+/* CardUser.css */
+
+.CardUserContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* alinha os itens verticalmente */
+    margin-bottom: 20px; /* espaço entre os cards de usuário */
+    padding: 15px; /* espaço interno do container */
+    background-color: #f0f0f0; /* cor de fundo do card */
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.imgprofile {
+    width: 80px; /* largura da imagem do perfil */
+    height: 80px; /* altura da imagem do perfil */
+    border-radius: 50%; /* para tornar a imagem redonda */
+    margin-right: 15px; /* espaço à direita da imagem */
+}
+
+.CardUserContainer p {
+    margin: 0; /* remove margens padrão dos parágrafos */
+    font-size: 16px; /* tamanho da fonte do texto */
+    color: #333; /* cor do texto */
+}
+
+.CardUserContainer p:first-child {
+    font-weight: bold; /* deixa o nome do usuário em negrito */
+}

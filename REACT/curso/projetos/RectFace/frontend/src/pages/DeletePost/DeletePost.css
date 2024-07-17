@@ -1,0 +1,69 @@
+/* DeletePost.css */
+
+.container {
+    max-width: 600px; /* largura máxima do container */
+    margin: 0 auto; /* centraliza o container na página */
+    padding: 20px; /* espaço interno */
+    background-color: #f9f9f9; /* cor de fundo do container */
+    border-radius: 8px; /* bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.post-title {
+    font-size: 24px; /* tamanho da fonte do título */
+    font-weight: bold; /* negrito */
+    margin-bottom: 10px; /* espaço abaixo do título */
+    color: black;
+}
+
+.post-image {
+    max-width: 100%; /* largura máxima da imagem */
+    height: auto; /* altura automática */
+    border-radius: 8px; /* bordas arredondadas */
+    margin-bottom: 10px; /* espaço abaixo da imagem */
+}
+
+.post-info {
+    display: flex; /* exibe os elementos em linha */
+    justify-content: space-between; /* alinha os elementos nas extremidades */
+    align-items: center; /* alinha os itens verticalmente */
+    margin-bottom: 10px; /* espaço abaixo da informação */
+}
+
+.post-info p {
+    margin: 0; /* remove margens padrão */
+}
+
+.delete-button {
+    padding: 10px 20px; /* preenchimento interno do botão */
+    background-color: #333; /* cor de fundo do botão (preto) */
+    color: #fff; /* cor do texto (branco) */
+    border: none; /* remove a borda */
+    border-radius: 5px; /* bordas arredondadas */
+    cursor: pointer; /* cursor do mouse como ponteiro */
+    transition: background-color 0.3s; /* transição suave da cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.delete-button:hover {
+    background-color: #555; /* cor de fundo ao passar o mouse (cinza mais escuro) */
+}
+
+.show-more-button {
+    background-color: #007bff; /* cor de fundo do botão (azul) */
+    color: #fff; /* cor do texto (branco) */
+    border: none; /* remove a borda */
+    padding: 8px 16px; /* preenchimento interno do botão */
+    border-radius: 5px; /* bordas arredondadas */
+    cursor: pointer; /* cursor do mouse como ponteiro */
+    transition: background-color 0.3s; /* transição suave da cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* sombra leve */
+}
+
+.show-more-button:hover {
+    background-color: #0056b3; /* cor de fundo ao passar o mouse (azul mais escuro) */
+}
+
+.titleComent {
+    color: black;
+}

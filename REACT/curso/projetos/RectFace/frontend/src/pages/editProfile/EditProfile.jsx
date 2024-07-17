@@ -25,9 +25,10 @@ const EditProfile = () => {
 
   //Dados retirados do meu reducer
   const { user, message, error, loading } = useSelector((state) => state.user)
-
+  
   useEffect(() => {
     dispatch(profile())
+    
   }, [dispatch])
 
   //atualizando o 

@@ -24,6 +24,31 @@ export const register = createAsyncThunk(
     }
 );
 
+export const GetAllPost = createAsyncThunk(
+    "fotos/GetAllPost",
+    async (data, thunkAPI) => {
+        const token = thunkAPI.getState().auth.user.token;
+
+        const Posts = await FotoService.GetAllPost(data, token);
+
+        if (Posts.errors) {
+            return thunkAPI.rejectWithValue(Posts.errors[0]);
+        }
+
+        return Posts;
+    }
+);
+
+export const GetFotoById = createAsyncThunk(
+    "fotos/GetFotoById",
+    async (id) => {
+        const Post = await FotoService.GetFotoById(id);
+
+     
+        return Post;
+    }
+);
+
 export const fotoSlice = createSlice({
     name: "foto",
     initialState, // correção: deve ser em minúsculas
@@ -46,6 +71,40 @@ export const fotoSlice = createSlice({
                 state.message = "Foto postada com sucesso";
             })
             .addCase(register.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload;
+                state.foto = {};
+                state.success = false; // correção: success com dois "c"
+            })
+            .addCase(GetAllPost.pending, (state) => {
+                state.loading = true;
+                state.error = false;
+            })
+            .addCase(GetAllPost.fulfilled, (state, action) => {
+                state.loading = false;
+                state.success = true; // correção: success com dois "c"
+                state.error = null;
+                state.foto = action.payload;
+                state.message = "Fotos buscadas com sucesso";
+            })
+            .addCase(GetAllPost.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.payload;
+                state.foto = {};
+                state.success = false; // correção: success com dois "c"
+            })
+            .addCase(GetFotoById.pending, (state) => {
+                state.loading = true;
+                state.error = false;
+            })
+            .addCase(GetFotoById.fulfilled, (state, action) => {
+                state.loading = false;
+                state.success = true; // correção: success com dois "c"
+                state.error = null;
+                state.foto = action.payload;
+                state.message = "Foto buscada com sucesso";
+            })
+            .addCase(GetFotoById.rejected, (state, action) => {
                 state.loading = false;
                 state.error = action.payload;
                 state.foto = {};

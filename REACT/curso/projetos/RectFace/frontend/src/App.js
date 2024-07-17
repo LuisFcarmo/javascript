@@ -16,6 +16,7 @@ import Footer from './component/Footer';
 
 //hooks
 import { useAuth } from './hook/useAuth';
+import DeletePost from './pages/DeletePost/DeletePost';
 
 function App() {
   const { auth, loading } = useAuth()
@@ -36,6 +37,7 @@ function App() {
             <Route path="/register" element={!auth ? <Register/> : <Navigate to = "/"/>}/>
             <Route path="/edit" element={auth ? <EditProfile/> : <Navigate to = "/login"/>}/>
             <Route path="/profile" element={auth ? <Profile/> : <Navigate to = "/login"/>}/>
+            <Route path='/delete/:id' element = {auth ? <DeletePost/> : <Navigate to = "/login"/>}/>
           </Routes>
         </div>
       </BrowserRouter>

@@ -68,8 +68,6 @@ router.get("/user/:id",
     getAllFotosById)
 
 router.get("/foto/:id",
-    authGuard,
-    validate,
     getFotoById)
 
 router.get("/search",
